@@ -155,8 +155,9 @@ section{
 
 body {
   background-color: #1e1c22;
-  background-image: url("https://i.ibb.co/dDhy5v9/bg-inverted.png");
-  background-blend-mode: hard-light;
+  /*background-image: url("https://i.ibb.co/dDhy5v9/bg-inverted.png");
+  background-blend-mode: hard-light;*/
+  background-color: #222;
   background-size: cover;
 }
 

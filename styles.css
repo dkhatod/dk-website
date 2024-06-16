@@ -2,7 +2,7 @@
 
 body{
   color: #fff;
-  backgrounf: #fff;
+
   font-family: Helvetica, sans-serif;
 }
 section{
@@ -34,30 +34,34 @@ section{
 }
 
 .center-center {
-  position: fixed;
+  position: static;
   left: 50%;
   top: 50%;
   transform: translate(-50%);
 }
 
 [class*="btn-glitch-"] {
-  display: inline-block;
+  margin-top:18px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
   font-family: "VT323", monospace;
   border: 1px solid white;
   color: white;
   padding: 10px 13px;
   min-width: 175px;
+  max-width: 250px;
   line-height: 1.5em;
-  white-space: no-wrap;
+  white-space: nowrap;
   text-transform: uppercase;
   cursor: pointer;
+  text-align: center;
   .text,
   .decoration {
     display: inline-block;
   }
   .decoration {
     display: inline-block;
-    float: right;
   }
   &:hover, &:focus {
     animation-name: glitch;
@@ -152,7 +156,7 @@ section{
 body {
   background-color: #1e1c22;
   background-image: url("https://i.ibb.co/dDhy5v9/bg-inverted.png");
-  background-blend-mode: lighten;
+  background-blend-mode: hard-light;
   background-size: cover;
 }
 
@@ -161,53 +165,7 @@ body {
     padding: 0;
 }
 
-.cursor {
-    display: block;
-    width: 20px;
-    height: 20px;
-    position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%);
-    border-radius: 50%;
-    background: transparent;
-    pointer-events: none;
-    z-index: 111;
-    border: 1px solid yellow;
-    transition: all 0.2s ease-out;
-    animation: moveCursor1 .5s infinite alternate;
-}
 
-.expand {
-    background: transparent;
-    animation: moveCursor2 .5s forwards;
-    border: 1px solid ;
-}
-
-@keyframes moveCursor1 {
-    from {
-        transform: scale(1);
-    }
-
-    to {
-        transform: scale(.8);
-    }
-}
-
-@keyframes moveCursor2 {
-    0% {
-        transform: scale(1);
-    }
-
-    50% {
-        transform: scale(2);
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 0;
-    }
-}
 
 #caption {
   font-size: 10px;
@@ -224,4 +182,9 @@ body {
   text-align: center;
   max-width: 5%;
   max-height: 5%;
+  
+}
+
+#intro {
+  text-align:center;
 }

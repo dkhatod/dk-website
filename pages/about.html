@@ -1,33 +1,38 @@
-
+<link rel="stylesheet" href="../styles/about.css">
+<link rel="stylesheet" href="../styles/back-button.css">
 <!DOCTYPE html>
 <html lang="en">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects Showcase</title>
-    <link rel="stylesheet" href="../styles/projects.css">
-    <link rel="stylesheet" href="../styles/back-button.css">
+    <title>About Me</title>
 </head>
 <a href="../index.html" class="back-button" aria-label="Back">Back</a>
 <body>
-    
-    
-    <div class="projects-container">
-        <div class="project">
-            <h2 class="project-title">In Progress: Home Media Server</h2>
-            <p class="project-description">Raspberry Pi + Jellyfin</p>
-            <a href="#" class="project-link">View Project</a>
+
+<div class="terminal">
+    <div class="terminal-header">
+        <div class="terminal-buttons">
+            <span class="terminal-button close"></span>
+            <span class="terminal-button minimize"></span>
+            <span class="terminal-button maximize"></span>
         </div>
-        <div class="project">
-            <h2 class="project-title">Handshake Webscraper</h2>
-            <p class="project-description">Description of Project 1.</p>
-            <a href="#" class="project-link">View Project</a>
-        </div>
-        <div class="project">
-            <h2 class="project-title">UAV Project</h2>
-            <p class="project-description">Showcased at OpenSauce 2024.</p>
-            <a href="#" class="project-link">View Project</a>
-        </div>
+        <span class="terminal-title"></span>
     </div>
+    <div class="terminal-body">
+        <pre class="terminal-output">
+const aboutMe = {
+    name : "dhruv khatod"
+    email : "dhruvkhatodschool@gmail.com"
+    current_position : "student"
+};
+        </pre>
+    </div>
+</div>
+
+<script src="../scripts/about.js"></script>
 </body>
 </html>
+

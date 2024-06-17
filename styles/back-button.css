@@ -3,37 +3,30 @@
     top: 20px;
     left: 20px;
     display: inline-block;
-    background-color: rgb(51, 51, 51);
-    color: rgb(170, 170, 170);
-    font-family: "Bebas Neue", sans-serif;
+    padding: 8px 20px;
+    background-color: #333;
+    color: #aaa;
+    font-family: 'Bebas Neue', sans-serif;
     text-transform: uppercase;
     z-index: 1000;
-    padding: 10px 20px;
-    border-width: 2px;
-    border-style: solid;
-    border-color: rgb(170, 170, 170);
-    border-image: initial;
+    border: 2px solid #aaa;
     border-radius: 5px;
     text-decoration: none;
     overflow: hidden;
-    transition: color 0.3s ease 0s, border-color 0.3s ease 0s, background-color 0.3s ease 0s;
+    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
 }
 
 .back-button::before {
     content: "";
     position: absolute;
-    top: -5px;
-    left: -5px;
-    width: calc(100% + 10px);
-    height: calc(100% + 10px);
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    background: linear-gradient(to right, #f00, #0f0, #00f);
     mix-blend-mode: screen;
-    animation-timeline: auto;
-    animation-range-start: normal;
-    animation-range-end: normal;
     clip-path: polygon(0% 0%, 100% 0%, 85% 50%, 100% 100%, 0% 100%);
-    background: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
-    animation: auto ease 0s 1 normal none running none;
-    transition: transform 0.3s ease 0s;
+    transition: transform 0.3s;
 }
 
 .back-button:hover {
@@ -42,7 +35,7 @@
     border-color: transparent;
 }
 
-.back-button:hover:before {
+.back-button:hover::before {
     animation: glitch 1s infinite linear alternate-reverse;
 }
 

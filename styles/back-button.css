@@ -3,31 +3,37 @@
     top: 20px;
     left: 20px;
     display: inline-block;
-    padding: 7.5px 20px;
-    background-color: #333;
-    border: 2px solid #aaa;
-    border-radius: 5px;
-    color: #aaa;
-    font-family: 'Bebas Neue', sans-serif;
-    text-decoration: none;
+    background-color: rgb(51, 51, 51);
+    color: rgb(170, 170, 170);
+    font-family: "Bebas Neue", sans-serif;
     text-transform: uppercase;
     z-index: 1000;
+    padding: 10px 20px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: rgb(170, 170, 170);
+    border-image: initial;
+    border-radius: 5px;
+    text-decoration: none;
     overflow: hidden;
-    transition: color 0.3s, border-color 0.3s, background-color 0.3s;
+    transition: color 0.3s ease 0s, border-color 0.3s ease 0s, background-color 0.3s ease 0s;
 }
 
-.back-button:before {
-    content: '';
+.back-button::before {
+    content: "";
     position: absolute;
-    top: -2px;
-    left: -2px;
-    width: calc(100% + 4px);
-    height: calc(100% + 4px);
-    background: linear-gradient(to right, #f00, #0f0, #00f);
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
     mix-blend-mode: screen;
-    animation: none;
+    animation-timeline: auto;
+    animation-range-start: normal;
+    animation-range-end: normal;
     clip-path: polygon(0% 0%, 100% 0%, 85% 50%, 100% 100%, 0% 100%);
-    transition: transform 0.3s;
+    background: linear-gradient(to right, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+    animation: auto ease 0s 1 normal none running none;
+    transition: transform 0.3s ease 0s;
 }
 
 .back-button:hover {
